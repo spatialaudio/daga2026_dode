@@ -34,9 +34,13 @@ responses.
 ## Theory in Short
 
 Frequency response of radial filter (for $r>R$)
+
 $$H_n(\omega,r,R) = -\mathrm{j} \frac{h_n^{(2)}(\frac{\omega}{c}r)}{h_n^{'(2)}(\frac{\omega}{c}R)}$$
+
 can be stated as frequency response
+
 $$H_n(\omega,r,R) = \frac{R}{r} \mathrm{e}^{-\mathrm{j}\omega (\frac{r-R}{c})} \cdot (1 + \hat{H}_n(s\big|_{s=\mathrm{j}\omega},r,R))$$
+
 using the $n+1$ poles Laplace transfer function $\hat{H}_n(s,r,R)$ in partial fraction
 expansion (PFE) representation.
 
