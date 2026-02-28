@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: Wave Field Synthesis
+title: Time-Domain Radiation Model of a Cap on a Rigid Sphere
 message: Please cite this project using these metadata.
 type: software
 authors:
@@ -14,35 +14,36 @@ authors:
     orcid: 'https://orcid.org/0000-0001-7225-9992'
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.8060879
-    description: GER version of this project
-repository-code: 'https://github.com/spatialaudio/wfs_chapter_hda'
+    value:
+    description: DOI for the corresponding paper at DAGA 2026 conference
+repository-code: 'https://github.com/spatialaudio/daga2026_dode'
 abstract: >-
-  Wave field synthesis (WFS) is a spatial reproduction
-  technique. It involves controlled interference to produce
-  spatially and temporally distinct wavefronts. This
-  requires loudspeaker arrays with very dense loudspeaker
-  spacing and individual signal processing for each
-  loudspeaker. Unlike channel-based reproduction methods,
-  WFS calculates the loudspeaker signals using measurement
-  data or audio objects and their spatio-temporal
-  parameters. WFS is used in loudspeaker-based auralisation,
-  reverberation enhancement, 3D sound reinforcement,
-  audiological research and spatialised audio arts.
-
-
-  The repository hosts the LaTeX code and the Python
-  reference implementation that the authors used to create
-  their submission for the chapter `Wave Field Synthesis' in
-  Stefan Weinzierl (editor): Handbook of Audio Technology,
-  1st English edition, Springer.
+The velocity-to-pressure exterior wave field expansion for spherically shaped
+radiators is well known.
+It involves a modal radial filter, based on the spherical Hankel function and
+its derivative, which can be given as a Laplace-domain transfer function.
+Its frequency-dependent part can be expressed as partial fraction expansion and
+is consequently suited for the impulse invariance digital filter design method.
+This was utilised for radial directivity control of spherical loudspeaker arrays
+, which essentially deals with the inverse radial filters compared to the here
+discussed radiation case.
+Recently, a band-limited impulse invariance method (BLIIM) was introduced.
+This improves radial filters for spherical microphone arrays by reduction of
+time-domain aliasing.
+In the present paper a BLIIM for the above mentioned radiation model is proposed.
+By using a specific modal velocity spectrum of non-overlapping spherical cap
+pistons on a rigid sphere, the direction-dependent radiation and the far-field
+directivity of such a source can be modelled with dedicated digital filters.
+As an example, a numerical implementation for a dodecahedron radiator is
+discussed, which could be utilised within an image source model
+and as theoretical time-domain model in the field of directional (room) impulse
+responses.
 keywords:
-  - spatialisation
-  - virtual point source
-  - wave field
-  - wavefront
-  - wavefront curvature
-  - spatial aliasing
-license: CC-BY-4.0
-version: 0.4.0
-date-released: '2025-11-08'
+- spherical expansion
+- radial filter
+- filter bank
+- cap piston
+- band-limited impulse invariance method
+license-url: https://github.com/spatialaudio/daga2026_dode/blob/main/LICENSE
+version: 0.0.0
+date-released: '2026-03-22'
