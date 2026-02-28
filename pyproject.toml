@@ -1,0 +1,31 @@
+[project]
+name = "daga2026_dode"
+version = "0.0.0"
+dependencies = [
+  "ipykernel",
+  "matplotlib",
+  "numpy",
+  "scipy",
+  "pyfar",
+  "spharpy",
+  "ipympl",
+  "papermill"
+]
+requires-python = ">=3.13"
+authors = [
+  {name = "Frank Schultz", github = "fs446"},
+  {name = "Nara Hahn", github = "narahahn"},
+]
+description = "Time-Domain Radiation Model of a Cap on a Rigid Sphere"
+readme = "README.md"
+license = "MIT"
+keywords = [
+  "spherical expansion",
+  "radial filter",
+  "filter bank",
+  "cap piston",
+  "band-limited impulse invariance method"
+]
+
+[project.urls]
+Repository = "https://github.com/spatialaudio/daga2026_dode"

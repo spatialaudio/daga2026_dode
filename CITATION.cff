@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+title: Wave Field Synthesis
+message: Please cite this project using these metadata.
+type: software
+authors:
+  - family-names: Schultz
+    given-names: Frank
+    orcid: 'https://orcid.org/0000-0002-3010-0294'
+  - family-names: Hahn
+    given-names: Nara
+    orcid: 'https://orcid.org/0000-0003-3564-5864'
+  - family-names: Spors
+    given-names: Sascha
+    orcid: 'https://orcid.org/0000-0001-7225-9992'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.8060879
+    description: GER version of this project
+repository-code: 'https://github.com/spatialaudio/wfs_chapter_hda'
+abstract: >-
+  Wave field synthesis (WFS) is a spatial reproduction
+  technique. It involves controlled interference to produce
+  spatially and temporally distinct wavefronts. This
+  requires loudspeaker arrays with very dense loudspeaker
+  spacing and individual signal processing for each
+  loudspeaker. Unlike channel-based reproduction methods,
+  WFS calculates the loudspeaker signals using measurement
+  data or audio objects and their spatio-temporal
+  parameters. WFS is used in loudspeaker-based auralisation,
+  reverberation enhancement, 3D sound reinforcement,
+  audiological research and spatialised audio arts.
+
+
+  The repository hosts the LaTeX code and the Python
+  reference implementation that the authors used to create
+  their submission for the chapter `Wave Field Synthesis' in
+  Stefan Weinzierl (editor): Handbook of Audio Technology,
+  1st English edition, Springer.
+keywords:
+  - spatialisation
+  - virtual point source
+  - wave field
+  - wavefront
+  - wavefront curvature
+  - spatial aliasing
+license: CC-BY-4.0
+version: 0.4.0
+date-released: '2025-11-08'
