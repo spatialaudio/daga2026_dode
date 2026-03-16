@@ -1,3 +1,5 @@
+# see https://github.com/spatialaudio/daga2026_dode
+
 # check that scipy.special assoc_legendre_p() and sph_harm_y()
 # are consistent with the conventions from
 # [Raf19] Boaz Rafaely (2019): Fundamentals of Spherical Array Processing,

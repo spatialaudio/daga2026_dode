@@ -1,3 +1,5 @@
+# see https://github.com/spatialaudio/daga2026_dode
+
 import papermill as pm
 from pathlib import Path
 import subprocess
@@ -13,8 +15,13 @@ if flag == 'notebooks':
             output_path='executed_ipynb' / nb
         )
 elif flag == 'scripts':
+    # we could/should have used Python's errors and exceptions handling
+    # but we lazily go for simple prints of True/False on the check files:
+    # check that utilised spharpy functions work as intended:
+    subprocess.call(['python', 'check_spharpy.py'])
     # check that Ynm and Pnm work as intended:
     subprocess.call(['python', 'check_Ynm_Pnm.py'])
+
     # Fig. 1 paper/poster:
     subprocess.call(['python', 'radial_filter_ground_truth.py'])
     # Fig. 2 paper/poster:
@@ -25,5 +32,8 @@ elif flag == 'scripts':
     subprocess.call(['python', 'dodecahedron_sphere.py'])
     # Fig. 4b paper, Fig. 3b poster:
     subprocess.call(['python', 'dodecahedron_pressure_irs.py'])
+
+    # not in paper / poster but might be helpful:
+    subprocess.call(['python', 'dipole_velocity_from_two_caps.py'])
 else:
     print('nothing to do')
