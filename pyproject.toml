@@ -6,8 +6,8 @@ dependencies = [
   "matplotlib",
   "numpy",
   "scipy",
-  "pyfar",
-  "spharpy",
+  "pyfar>=0.8.0",
+  "spharpy>=1.0.0",
   "ipympl",
   "papermill"
 ]
